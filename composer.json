@@ -1,0 +1,57 @@
+{
+    "name": "darkeum/jpgraph",
+    "type": "library",
+    "description": "Composer Friendly, full refactor of JpGraph, library to make graphs and charts",
+    "keywords": [
+        "graph",
+        "chart",
+        "pie",
+        "jpgraph",
+        "data"
+    ],
+    "homepage": "http://jpgraph.net/",
+    "license": "QPL-1.0",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.0",
+        "codeception/module-asserts": "^1.1",
+        "ergebnis/composer-normalize": "^2.13",
+        "ergebnis/php-cs-fixer-config": "^2.13",
+        "kint-php/kint": "^3.3",
+        "monolog/monolog": "^2.0",
+        "overtrue/phplint": "^2.3",
+        "squizlabs/php_codesniffer": "^3.6",
+        "symfony/dotenv": "^4.0 || ^5.0",
+        "symfony/event-dispatcher": "^4.0 || ^5.0",
+        "symfony/yaml": "^4.0 || ^5.0"
+    },
+    "extra": {
+        "composer-normalize": {
+            "indent-size": 4,
+            "indent-style": "space"
+        },
+        "version": "4.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Darkeum\\JpGraph\\": "src/",
+            "Darkeum\\JpGraph\\Graph\\": "src/graph",
+            "Darkeum\\JpGraph\\Graph\\Scale\\": "src/graph/scale",
+            "Darkeum\\JpGraph\\Graph\\Tick\\": "src/graph/tick",
+            "Darkeum\\JpGraph\\Graph\\Axis\\": "src/graph/axis",
+            "Darkeum\\JpGraph\\Image\\": "src/image",
+            "Darkeum\\JpGraph\\Plot\\": "src/plot",
+            "Darkeum\\JpGraph\\Text\\": "src/text",
+            "Darkeum\\JpGraph\\Themes\\": "src/themes",
+            "Darkeum\\JpGraph\\Util\\": "src/util"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Darkeum\\JpGraph\\UnitTest\\": "tests"
+        }
+    }
+}
