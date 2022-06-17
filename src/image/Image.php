@@ -1327,8 +1327,8 @@ class Image
         }
 
         if (abs($s - $e) > 0) {
-            // imagefilledarc($this->img, round($xc), round($yc), round($w), round($h), $s, $e, $this->current_color, $style);
-                       $this->DrawImageSmoothArc($this->img,round($xc),round($yc),round($w),round($h),$s,$e,$this->current_color,$style);
+            imagefilledarc($this->img, round($xc), round($yc), round($w), round($h), $s, $e, $this->current_color, $style);
+                    //    $this->DrawImageSmoothArc($this->img,round($xc),round($yc),round($w),round($h),$s,$e,$this->current_color,$style);
         }
     }
 
@@ -1561,8 +1561,8 @@ class Image
         $y1 = round($y1);
         $y2 = round($y2);
 
-        imageline($this->img, $x1, $y1, $x2, $y2, $this->current_color);
-        //        $this->DrawLine($this->img, $x1, $y1, $x2, $y2, $this->line_weight, $this->current_color);
+        // imageline($this->img, $x1, $y1, $x2, $y2, $this->current_color);
+               $this->DrawLine($this->img, $x1, $y1, $x2, $y2, $this->line_weight, $this->current_color);
         $this->lastx = $x2;
         $this->lasty = $y2;
     }
