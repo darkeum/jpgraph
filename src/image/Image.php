@@ -1327,8 +1327,8 @@ class Image
         }
 
         if (abs($s - $e) > 0) {
-            imagefilledarc($this->img, round($xc), round($yc), round($w), round($h), $s, $e, $this->current_color, $style);
-            //            $this->DrawImageSmoothArc($this->img,round($xc),round($yc),round($w),round($h),$s,$e,$this->current_color,$style);
+            // imagefilledarc($this->img, round($xc), round($yc), round($w), round($h), $s, $e, $this->current_color, $style);
+                       $this->DrawImageSmoothArc($this->img,round($xc),round($yc),round($w),round($h),$s,$e,$this->current_color,$style);
         }
     }
 
